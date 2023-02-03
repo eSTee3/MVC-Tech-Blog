@@ -1,5 +1,3 @@
-
-
 const loginHandler = async (e) => {
     e.preventDefault();
     const user_name = $('#user-name').val().trim();

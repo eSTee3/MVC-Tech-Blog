@@ -1,6 +1,3 @@
-
-
-
 const addPost = async (e) => {
     e.preventDefault(); 
 

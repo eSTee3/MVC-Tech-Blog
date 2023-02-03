@@ -1,5 +1,3 @@
-
-
 const deletePost = async (e) => {
     e.preventDefault(); 
     const urlString = window.location.toString().split('/')

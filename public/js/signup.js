@@ -1,4 +1,3 @@
-
 const signUpHandler = async (e) => {
     e.preventDefault();
     const user_name = $('#signup-username').val().trim();
