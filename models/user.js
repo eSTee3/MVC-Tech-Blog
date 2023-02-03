@@ -15,7 +15,7 @@ User.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
-          },
+            },
         user_name: {
             type: DataTypes.STRING,
             allowNull: false
@@ -24,8 +24,8 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                // Password lenght limited to between 8 and 25 characters
-                len: [7, 26],
+                // Password lenght limited to > 7 characters
+                len: [8],
             }
         }
 

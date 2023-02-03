@@ -1,8 +1,8 @@
 const checkInputs = (user_name, password) => {
     if (user_name == '') {
-        alert('please enter a username');
+        alert('Username');
     } if (password == '') {
-        alert('please enter a password');
+        alert('Password');
     }
 }
 
