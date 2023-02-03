@@ -11,15 +11,14 @@ Comment.init (
             primaryKey: true,
             autoIncrement: true,
           },
-
         contents: {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
-                len: [1, 150],
+                // Ensures comments are at least 6 characters long, but no longer than 349
+                len: [5, 350],
             },
         },
-
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false, 
@@ -28,7 +27,6 @@ Comment.init (
                 key: 'id'
             },
         },
-
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false, 
@@ -38,7 +36,6 @@ Comment.init (
             },
         },
     },
-
     {
         sequelize,
         timestamps: true,
@@ -47,8 +44,5 @@ Comment.init (
         modelName: 'comment',
     }
 );
-
-
-
 
 module.exports = Comment;
