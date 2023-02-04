@@ -1,12 +1,17 @@
 [
     {
-        "contents": "Great post, thanks so much for taking the time to let us know your thoughts!",
-        "user_id": 2,
+        "contents": "Stop blogging and start making more Krabby Patties!!!!",
+        "user_id": 3,
         "post_id": 1
     },
     {
-        "contents": "I totally agree",
-        "user_id": 1,
+        "contents": "I totally agree, me.",
+        "user_id": 2,
         "post_id": 2
+    },
+    {
+        "contents": "Wow Squidward, you're so analytical and consise with your words and stuff!",
+        "user_id": 1,
+        "post_id": 3
     }
 ]

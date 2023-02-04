@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="../">
+            <a style="font-family:courier;font-size:300%;font-weight:bolder" class="navbar-item" href="../">
                 Tech Blog
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
@@ -14,7 +14,7 @@
             <div class="navbar-end">
                 <a class="navbar-item is-active">
                         Home
-                    </a>
+                </a>
                 {{#if logged_in}}
                 <a class="navbar-item" href="./dashboard">
                         Dashboard
@@ -26,6 +26,9 @@
                 {{else}}
                     <a class="navbar-item" href="/login">
                         Login
+                    </a>
+                    <a class="navbar-item" href="/signup">
+                        Signup
                     </a>
                 {{/if}}
             </div>
@@ -64,6 +67,6 @@
     </section>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="/js/login.js"></script>
-    <script src="/js/logout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="/js/login.js"></script>
+<script src="/js/logout.js"></script>
