@@ -43,12 +43,13 @@
         </div>
     </div>
 </section>
- 
-<div class="card article mt-5">
+
+<div class="articles">
     <div class="card-content">
         <div>
             <div class="has-text-right">
-                <h4 class="has-text-weight-semibold">Posted by {{user.user_name}} on {{formDate singlePost.createdAt}}</h4>
+                {{!-- TODO: Figure out why username is not displaying!!!! --}}
+                <h4 class="has-text-weight-semibold">Posted by {{post.user_id}} on {{formDate singlePost.createdAt}}</h4>
             </div>
             <h3 style="font-size:125%;font-weight:bolder">{{singlePost.title}}</h3> 
         </div>
@@ -70,7 +71,7 @@
 <div class="card article mt-5">
     <div class="comments card-content">
         <div class="has-text-right">
-            <h4 class="has-text-weight-semibold">Posted by {{user.user_name}} on {{formDate comments.createdAt}}</h4>
+            <h4 class="has-text-weight-semibold">{{user.user_name}} commented on {{formDate comments.createdAt}}</h4>
         </div>
         <div>
             {{comments.contents}}

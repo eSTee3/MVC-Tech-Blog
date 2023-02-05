@@ -26,17 +26,15 @@ Post.init (
                 len: [5, 1501]
             }
         },
-       
         user_id: {
             type: DataTypes.INTEGER,
-            allowNull: true,
+            allowNull: false,
             references: {
                 model: 'user',
                 key:'id'
             },
         },  
     },
-
     {
         sequelize,
         timestamps: true,
@@ -45,8 +43,5 @@ Post.init (
         modelName: 'post',
     },
 );
-
-
-
 
 module.exports = Post;
