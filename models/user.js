@@ -24,7 +24,7 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                // Password length limited to 10 characters
+                // Password length limited to exactly 10 characters
                 len: [10],
             }
         }

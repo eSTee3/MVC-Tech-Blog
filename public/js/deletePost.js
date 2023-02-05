@@ -12,7 +12,7 @@ const deletePost = async (e) => {
         alert('Post Deleted')
         document.location.replace('/dashboard');
     } else {
-        alert("Something went wrong. Can't delete post")
+        alert(`I'm sorry but I've ran into an issue while attempting to delete your post.`);
     }
 }
 

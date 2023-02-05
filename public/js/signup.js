@@ -29,11 +29,9 @@ const signUpHandler = async (e) => {
             //replaces current page with home page
             document.location.replace('/');
         } else {
-            return alert('Username already exist in our database. Try another Username.')
+            return alert('This username is already taken. Please try a different Username.')
         }
     }
 };
+
 $('#signup-btn').click(signUpHandler)
-
-
-

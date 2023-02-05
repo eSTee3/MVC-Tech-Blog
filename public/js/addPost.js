@@ -15,7 +15,7 @@ const addPost = async (e) => {
         alert(data.message)
         document.location.replace('/dashboard');
     } else {
-        alert("Something went wrong. Can't create post");
+        alert(`I'm sorry but I've ran into an issue while attempting to create your post.`);
     }
    }
     

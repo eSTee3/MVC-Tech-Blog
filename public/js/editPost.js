@@ -16,7 +16,7 @@ const editPost = async (e) => {
         alert('Post Updated')
         document.location.replace('/dashboard');
     } else {
-        alert("Something went wrong. Can't Update post");
+        alert(`I'm sorry but I've ran into an issue while attempting to update your post.`);
     }
 }
 

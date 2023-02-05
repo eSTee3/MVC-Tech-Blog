@@ -3,6 +3,7 @@ const { User } = require('../../models');
 
 router.post('/', (req, res) => {
     if (req.session.logged_in) {
+      
       // Removes all session data on logout
       req.session.destroy(() => {
         res.status(204).end();

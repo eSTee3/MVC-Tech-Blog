@@ -17,7 +17,7 @@ const addComment = async (e) => {
             alert('Comment Added')
             document.location.replace(`/post/${postId}`)
         } else {
-            alert("Something went wrong. Can't add comment")
+            alert(`I'm sorry but I've ran into an issue while attempting to add your comment.`);
         }
     }
     

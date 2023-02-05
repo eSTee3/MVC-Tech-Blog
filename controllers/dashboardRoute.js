@@ -18,7 +18,6 @@ router.get('/', async (req, res) => {
 
 
         const userPosts = user.map((post) => post.get({ plain: true}));
-            // res.status(200).json({userPosts})
             res.render('dashboard', {
                 userPosts, 
                 logged_in: req.session.logged_in, 
@@ -45,7 +44,6 @@ router.get('/:id', async (req, res) => {
         }]
         });
         const editPost = post.get({ plain: true });
-            // res.status(200).json({editPost})
             res.render('editDeletePost', {
                 editPost,
             });

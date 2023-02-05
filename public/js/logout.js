@@ -4,12 +4,11 @@ const logout = async (event) => {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
     });
-
     
     if(response.ok) {
         document.location.replace('/login');
     } else {
-        alert('Uh-oh, something went wrong')
+        alert('Something has gone wrong')
     }
 }
 
