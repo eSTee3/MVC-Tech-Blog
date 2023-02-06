@@ -21,8 +21,9 @@
 ### Table of Contents
 - [Technologies Used](#technologies-used)
 - [Coding Badges](#coding-badges)
+- [Link to Application(#link-to-application)
 - [Description](#description)
-- [Installation](#installation)
+- [Local Installation](#installation)
 - [Demo Video](#application-demo-video)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
@@ -30,13 +31,15 @@
 - [How to Contribute](#how-to-contribute)
 
 ---
+### [Link to Application](https://estee3-tech-blog.herokuapp.com/)
+
 # Description
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
 [Back to Top](#table-of-contents)
 
 ---
-# Installation
+# Local Installation
 1. Download or clone this repo to your local machine
 2. Create a `.env` file in the root of the directory (within your IDE of choice)
  - Copy/paste the following code into the .env file you created, changing the password to be your MySQL root password:
