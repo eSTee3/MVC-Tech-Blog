@@ -42,14 +42,12 @@ router.get('/post/:id', async (req, res) => {
           include: [{
               model: User,
               model: Comment,
-              include: [
-                  {
+              include: [{
                       model: User, 
                       attributes : ['user_name']
-                  }
-              ]
-          }]
-      });
+                  }]
+            }]
+        });
       const singlePost = post.get({ plain: true });
         res.render('post', {
           singlePost,
