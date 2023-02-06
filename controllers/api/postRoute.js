@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
+// Get all Posts
 router.get('/', async (req, res) => {
     try {
         const postedData = await Post.findAll({
@@ -19,7 +20,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-//Retrieve post with all comments related to it
+//Retrieve a single post with all comments related to it
 router.get('/:id', async (req, res) => {
     try {        
         const post = await Post.findByPk(req.params.id, {
@@ -38,6 +39,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// Creates a new post
 router.post('/', async (req, res) => {
     try {
         const post = await Post.create({
@@ -45,12 +47,13 @@ router.post('/', async (req, res) => {
             contents: req.body.contents,
             user_id: req.session.user_id 
         });
-        res.status(200).json({post, message : `Post Created`})
+        res.status(200).json({post, message : `New Post Created!`})
     } catch (err) {
         res.status(500).json(err);
     }
 });
 
+// Updates an existing post
 router.put('/:id', async (req, res) => {
     try {
         const updatePost = await Post.update(req.body, {            
@@ -64,6 +67,7 @@ router.put('/:id', async (req, res) => {
     }
 })
 
+// Deletes a post
 router.delete('/:id', async (req, res) => {
     try { 
         const delPost = await Post.destroy({ where: {id : req.params.id}});
