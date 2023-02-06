@@ -119,6 +119,7 @@ WHEN I am idle on the site for more than a set time
 ```
 
 [Back to Top](#table-of-contents)
+
 ---
 
 # License
