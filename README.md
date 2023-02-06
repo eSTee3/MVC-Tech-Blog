@@ -21,7 +21,7 @@
 ### Table of Contents
 - [Technologies Used](#technologies-used)
 - [Coding Badges](#coding-badges)
-- [Link to Application(#link-to-application)
+- [Link to Application](#link-to-application)
 - [Description](#description)
 - [Local Installation](#installation)
 - [Demo Video](#application-demo-video)
