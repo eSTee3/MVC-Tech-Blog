@@ -36,13 +36,12 @@ router.get('/:id', async (req, res) => {
                 include : {
                     model : User,
                     attributes : ['user_name']
+                }}, 
+                {
+                model: User, 
+                attributes: ['user_name']
                 }
-            }, 
-            {
-            model: User, 
-            attributes: ['user_name']
-        }]
-        });
+        ]});
         const editPost = post.get({ plain: true });
             res.render('editDeletePost', {
                 editPost,
