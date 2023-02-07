@@ -62,7 +62,7 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 [Back to Top](#table-of-contents)
 
 ## Application Demo Video
-[![Demonstration Video](https://img.youtube.com/vi/CRUn9n0FdZI/0.jpg)](https://www.youtube.com/watch?v=CRUn9n0FdZI)
+[![Demonstration Video](https://img.youtube.com/vi/JApvWQ9w4Ls/0.jpg)](https://www.youtube.com/watch?v=JApvWQ9w4Ls)
 
 ## User Story
 **AS A** developer who writes about tech...  **I WANT** a CMS-style blog site...  **SO THAT** I can publish articles, blog posts, and my thoughts and opinions
